@@ -2,13 +2,11 @@ name: "CodeQL action"
 
 on:
   push:
-    branches: [main, releases/v*]
+    branches: [ "main" ]
   pull_request:
-  merge_group:
-    types: [checks_requested]
+    branches: [ "main" ]
   schedule:
-    # Weekly on Sunday.
-    - cron: '30 1 * * 0'
+    - cron: '18 9 * * 5'
   workflow_dispatch:
 
 defaults:
